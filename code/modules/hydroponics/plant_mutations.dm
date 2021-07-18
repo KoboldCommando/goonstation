@@ -82,6 +82,13 @@
 	iconmod = "CornClear"
 	assoc_reagents = list("ethanol")
 
+// Pea Mutations
+
+/datum/plantmutation/peas/ammonia
+	crop = /obj/item/reagent_containers/food/snacks/plant/peas/ammonia
+	iconmod = "GoldenPeas"
+	assoc_reagents = list("ammonia")
+
 // Grape Mutations
 
 /datum/plantmutation/grapes/green
@@ -101,6 +108,7 @@
 /datum/plantmutation/orange/blood
 	name = "Blood Orange"
 	name_prefix = "Blood "
+	crop = /obj/item/reagent_containers/food/snacks/plant/orange/blood
 	iconmod = "OrangeBlood"
 	assoc_reagents = list("bloodc") // heh
 
@@ -691,3 +699,11 @@
 	crop = /obj/item/plant/herb/tobacco/twobacco
 	assoc_reagents = list("nicotine2")
 	chance = 50
+
+//Dripper mutations
+/datum/plantmutation/dripper/leaker
+	name = "Leaker"
+	iconmod = "Leaker"
+	crop = /obj/item/reagent_containers/food/snacks/plant/purplegoop/orangegoop
+	assoc_reagents = list("oil")
+	chance = 25
